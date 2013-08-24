@@ -2821,6 +2821,11 @@ Sending child data from this device to another device will REPLACE all child dat
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="dad.png" translatesAutoresizingMaskIntoConstraints="NO" id="lGh-Z6-Pzw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="336" id="zEP-BP-s3U"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWs-C8-JgR">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Dependants">
@@ -2860,11 +2865,6 @@ Sending child data from this device to another device will REPLACE all child dat
                                     <segue destination="J7m-zc-Pcx" kind="modal" modalTransitionStyle="flipHorizontal" id="pOD-tc-Mhz"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="dad.png" translatesAutoresizingMaskIntoConstraints="NO" id="lGh-Z6-Pzw">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="336" id="zEP-BP-s3U"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -2979,6 +2979,6 @@ Sending child data from this device to another device will REPLACE all child dat
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="p8C-rV-yV3"/>
-        <segue reference="dGe-Bk-buF"/>
+        <segue reference="pOD-tc-Mhz"/>
     </inferredMetricsTieBreakers>
 </document>
