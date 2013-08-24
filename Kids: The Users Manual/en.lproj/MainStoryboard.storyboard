@@ -88,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="childListCell" textLabel="Adm-g1-i5P" detailTextLabel="lv7-Hg-noh" style="IBUITableViewCellStyleValue1" id="OL9-YU-OtZ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="childListCell" textLabel="Adm-g1-i5P" style="IBUITableViewCellStyleDefault" id="OL9-YU-OtZ">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -96,13 +96,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adm-g1-i5P">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv7-Hg-noh">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
@@ -231,20 +226,14 @@
             </objects>
             <point key="canvasLocation" x="2350" y="-1268"/>
         </scene>
-        <!--Table View Controller - Childs Name-->
+        <!--Child Detail View Controller - Childs Name-->
         <scene sceneID="kAg-Oq-nxb">
             <objects>
-                <tableViewController id="5BL-Qc-doS" sceneMemberID="viewController">
+                <tableViewController id="5BL-Qc-doS" customClass="KUMChildDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="uQE-mJ-etH">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <textField key="tableFooterView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="qR9-7R-7bV">
-                            <rect key="frame" x="0.0" y="1430" width="320" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
                         <sections>
                             <tableViewSection headerTitle="Info" id="PK9-EC-S6d">
                                 <cells>
@@ -263,7 +252,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jVc-4I-KQo">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jVc-4I-KQo">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="Xzh-XP-ebh"/>
                                                     </constraints>
@@ -295,7 +284,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hq7-IN-xgx">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hq7-IN-xgx">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="zkZ-J7-D2Y"/>
                                                     </constraints>
@@ -327,9 +316,9 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XIn-e3-KXv">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XIn-e3-KXv">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="97" id="PUV-Be-VXm"/>
+                                                        <constraint firstAttribute="width" constant="170" id="FKG-TB-0cF"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -339,8 +328,8 @@
                                         </view>
                                         <constraints>
                                             <constraint firstItem="CE7-FF-c1w" firstAttribute="top" secondItem="VNx-6z-3ty" secondAttribute="top" constant="11" id="AWz-O8-q1e"/>
-                                            <constraint firstAttribute="trailing" secondItem="XIn-e3-KXv" secondAttribute="trailing" constant="30" id="CuD-kh-2Td"/>
                                             <constraint firstItem="XIn-e3-KXv" firstAttribute="centerY" secondItem="VNx-6z-3ty" secondAttribute="centerY" type="default" id="cIX-Xx-eoj"/>
+                                            <constraint firstItem="XIn-e3-KXv" firstAttribute="leading" secondItem="VNx-6z-3ty" secondAttribute="leading" constant="120" id="jQv-Rw-aVi"/>
                                             <constraint firstItem="CE7-FF-c1w" firstAttribute="leading" secondItem="VNx-6z-3ty" secondAttribute="leading" constant="30" id="l1G-fi-j6n"/>
                                         </constraints>
                                     </tableViewCell>
@@ -359,12 +348,12 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4N1-hz-LTu">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4N1-hz-LTu">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="c6f-WX-X5A"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -391,12 +380,12 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="11R-Gl-EXe">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="11R-Gl-EXe">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="tT2-ly-5fO"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -427,7 +416,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yy2-dx-fpc">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yy2-dx-fpc">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="Ujy-Ww-45o"/>
                                                     </constraints>
@@ -459,7 +448,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4zl-fd-lby">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4zl-fd-lby">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="IW0-af-oFW"/>
                                                     </constraints>
@@ -491,7 +480,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rLw-zA-I7L">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rLw-zA-I7L">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="wWN-ia-k9e"/>
                                                     </constraints>
@@ -523,7 +512,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i9c-ln-tEi">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i9c-ln-tEi">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="58E-7y-nbx"/>
                                                     </constraints>
@@ -555,7 +544,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qC-zR-s0V">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qC-zR-s0V">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="O4r-Y3-fGZ"/>
                                                     </constraints>
@@ -587,7 +576,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sGM-TF-GGn">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sGM-TF-GGn">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="9PV-Mg-Dcy"/>
                                                     </constraints>
@@ -619,7 +608,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bI3-8G-ldY">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bI3-8G-ldY">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="7Js-Si-iZh"/>
                                                     </constraints>
@@ -651,7 +640,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDy-g6-B0b">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDy-g6-B0b">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="VmQ-3f-I0L"/>
                                                     </constraints>
@@ -683,7 +672,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J48-Ru-tr5">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J48-Ru-tr5">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="YhW-rz-zze"/>
                                                     </constraints>
@@ -715,7 +704,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3CI-6f-Kp2">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3CI-6f-Kp2">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="e6m-v2-JsO"/>
                                                     </constraints>
@@ -751,7 +740,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iXX-Ck-1ft">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iXX-Ck-1ft">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="gtE-fU-cWj"/>
                                                     </constraints>
@@ -775,7 +764,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQO-gV-pLa">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQO-gV-pLa">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="CQc-dK-hog"/>
                                                     </constraints>
@@ -807,7 +796,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZjN-ge-QEp">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZjN-ge-QEp">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="Ffi-Ez-DqJ"/>
                                                     </constraints>
@@ -839,7 +828,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="upq-Ls-g2J">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="upq-Ls-g2J">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="wgu-A2-uml"/>
                                                     </constraints>
@@ -871,7 +860,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g6o-Qh-Nlk">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g6o-Qh-Nlk">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="o1f-DJ-60m"/>
                                                     </constraints>
@@ -903,7 +892,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jsv-lM-j4F">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jsv-lM-j4F">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="FvN-tl-XaK"/>
                                                     </constraints>
@@ -935,7 +924,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VsB-RA-uM9">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VsB-RA-uM9">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="tgZ-z7-IYj"/>
                                                     </constraints>
@@ -967,7 +956,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-H2-aa4">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-H2-aa4">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="skj-2c-xx2"/>
                                                     </constraints>
@@ -999,7 +988,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7UC-FT-l7l">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7UC-FT-l7l">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="Zy1-bu-4nr"/>
                                                     </constraints>
@@ -1031,7 +1020,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pNj-PQ-x8E">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pNj-PQ-x8E">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="mPL-9L-qXP"/>
                                                     </constraints>
@@ -1063,7 +1052,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="myd-NL-d6F">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="myd-NL-d6F">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="rhn-mr-WPQ"/>
                                                     </constraints>
@@ -1095,7 +1084,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MYa-du-iAk">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MYa-du-iAk">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="3XG-1g-XXG"/>
                                                     </constraints>
@@ -1127,7 +1116,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FvH-JW-mYu">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FvH-JW-mYu">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="3KH-fd-Nti"/>
                                                     </constraints>
@@ -1159,7 +1148,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J4X-9q-p2Q">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J4X-9q-p2Q">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="vlh-k9-xoH"/>
                                                     </constraints>
@@ -1193,6 +1182,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Childs Name" id="W4C-rx-dvJ"/>
+                    <connections>
+                        <outlet property="birthdayField" destination="hq7-IN-xgx" id="3iZ-X4-nQ7"/>
+                        <outlet property="genderField" destination="jVc-4I-KQo" id="sLK-4C-K5u"/>
+                        <outlet property="lengthField" destination="4N1-hz-LTu" id="zvi-70-Z4k"/>
+                        <outlet property="nicknameField" destination="XIn-e3-KXv" id="dNk-wB-zhV"/>
+                        <outlet property="weightField" destination="11R-Gl-EXe" id="a5t-yj-ket"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8I-Zp-dHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1223,7 +1219,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="A5k-N1-Yn6" kind="push" id="WtX-yh-9qS"/>
+                                    <segue destination="A5k-N1-Yn6" kind="push" identifier="AdviceList_AdviceDetail" id="WtX-yh-9qS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1240,10 +1236,10 @@
             </objects>
             <point key="canvasLocation" x="1807" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Advice Detail View Controller-->
         <scene sceneID="NGt-Ek-1Bx">
             <objects>
-                <viewController id="A5k-N1-Yn6" sceneMemberID="viewController">
+                <viewController id="A5k-N1-Yn6" customClass="KUMAdviceDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ldI-NG-cSy">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1261,6 +1257,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qI3-PI-HYn"/>
+                    <connections>
+                        <outlet property="theWebView" destination="DyZ-Zk-7uJ" id="P4k-zz-e8V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Tz-qA-9vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1396,7 +1395,7 @@ Sending child data from this device to another device will REPLACE all child dat
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="childListCell" textLabel="fBu-cC-IUF" detailTextLabel="PUK-zJ-FlS" style="IBUITableViewCellStyleValue1" id="wpo-QT-MvO">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="childListCell" textLabel="fBu-cC-IUF" style="IBUITableViewCellStyleDefault" id="wpo-QT-MvO">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1404,13 +1403,8 @@ Sending child data from this device to another device will REPLACE all child dat
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBu-cC-IUF">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUK-zJ-FlS">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
@@ -1530,10 +1524,10 @@ Sending child data from this device to another device will REPLACE all child dat
             </objects>
             <point key="canvasLocation" x="2350" y="811"/>
         </scene>
-        <!--Table View Controller - Childs Name-->
+        <!--Child Detail View Controller - Childs Name-->
         <scene sceneID="ozP-D8-r5E">
             <objects>
-                <tableViewController id="i4e-Wv-EEr" sceneMemberID="viewController">
+                <tableViewController id="i4e-Wv-EEr" customClass="KUMChildDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="30b-OU-9Kr">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1556,7 +1550,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tys-6C-91Y">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tys-6C-91Y">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="erG-BG-qMK"/>
                                                     </constraints>
@@ -1588,7 +1582,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRD-57-tIE">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRD-57-tIE">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="WDi-ng-P4C"/>
                                                     </constraints>
@@ -1620,9 +1614,9 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ujF-e7-cHG">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ujF-e7-cHG">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="97" id="Q0L-PV-LHp"/>
+                                                        <constraint firstAttribute="width" constant="205" id="DKe-AQ-bPq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
@@ -1633,7 +1627,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                         <constraints>
                                             <constraint firstItem="OIH-rd-t8J" firstAttribute="leading" secondItem="EPa-hK-WIr" secondAttribute="leading" constant="30" id="6x7-bC-Mfw"/>
                                             <constraint firstItem="OIH-rd-t8J" firstAttribute="top" secondItem="EPa-hK-WIr" secondAttribute="top" constant="11" id="FjN-y3-Zd9"/>
-                                            <constraint firstAttribute="trailing" secondItem="ujF-e7-cHG" secondAttribute="trailing" constant="30" id="qmU-BZ-fUL"/>
+                                            <constraint firstItem="ujF-e7-cHG" firstAttribute="leading" secondItem="EPa-hK-WIr" secondAttribute="leading" constant="85" id="fNi-Cb-fmY"/>
                                             <constraint firstItem="ujF-e7-cHG" firstAttribute="centerY" secondItem="EPa-hK-WIr" secondAttribute="centerY" type="default" id="zQF-PF-yYE"/>
                                         </constraints>
                                     </tableViewCell>
@@ -1652,12 +1646,12 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWJ-hR-Gsp">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWJ-hR-Gsp">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="bKW-K4-Pxy"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1684,12 +1678,12 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YfA-ee-aW8">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YfA-ee-aW8">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="OKH-gt-MKA"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1720,7 +1714,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gYu-uX-vDD">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gYu-uX-vDD">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="lJl-U4-aYG"/>
                                                     </constraints>
@@ -1752,7 +1746,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G0a-nP-0dn">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G0a-nP-0dn">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="nnI-Ep-cne"/>
                                                     </constraints>
@@ -1784,7 +1778,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFG-Zn-Df6">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFG-Zn-Df6">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="TzV-vA-k4G"/>
                                                     </constraints>
@@ -1816,7 +1810,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lp5-EV-TY6">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lp5-EV-TY6">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="ayt-tk-KB1"/>
                                                     </constraints>
@@ -1848,7 +1842,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYd-LM-Cbp">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYd-LM-Cbp">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="1e4-HO-idT"/>
                                                     </constraints>
@@ -1880,7 +1874,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1W6-qL-zGJ">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1W6-qL-zGJ">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="Pe0-BA-OhD"/>
                                                     </constraints>
@@ -1912,7 +1906,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aYz-Y4-CHF">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aYz-Y4-CHF">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="UrS-50-J4I"/>
                                                     </constraints>
@@ -1944,7 +1938,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDU-cb-U3s">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDU-cb-U3s">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="jcM-6U-QcU"/>
                                                     </constraints>
@@ -1976,7 +1970,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JD9-zr-bNb">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JD9-zr-bNb">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="Pgp-Ih-Q1e"/>
                                                     </constraints>
@@ -2008,7 +2002,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="An9-P1-daf">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="An9-P1-daf">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="R80-Fi-8z8"/>
                                                     </constraints>
@@ -2044,7 +2038,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Yw-76-orR">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Yw-76-orR">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="oUp-Qw-khA"/>
                                                     </constraints>
@@ -2068,7 +2062,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nHm-n5-Bom">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nHm-n5-Bom">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="Gby-Ii-VOs"/>
                                                     </constraints>
@@ -2100,7 +2094,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCL-1u-Nh7">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCL-1u-Nh7">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="9m9-xG-qBI"/>
                                                     </constraints>
@@ -2132,7 +2126,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BCK-Rw-lcl">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BCK-Rw-lcl">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="3Qo-iK-IuE"/>
                                                     </constraints>
@@ -2164,7 +2158,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bwu-AZ-9ua">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bwu-AZ-9ua">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="h31-oZ-7CV"/>
                                                     </constraints>
@@ -2196,7 +2190,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYC-TA-Ycf">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYC-TA-Ycf">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="JCj-wN-HWI"/>
                                                     </constraints>
@@ -2228,7 +2222,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KpQ-Li-Sis">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KpQ-Li-Sis">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="PXE-hY-Hc9"/>
                                                     </constraints>
@@ -2260,7 +2254,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zq5-Yy-tDs">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zq5-Yy-tDs">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="2rw-dp-RhL"/>
                                                     </constraints>
@@ -2292,7 +2286,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PWA-Hn-hvg">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PWA-Hn-hvg">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="RCr-YI-HNq"/>
                                                     </constraints>
@@ -2324,7 +2318,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NRs-si-1Me">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NRs-si-1Me">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="Ik1-EU-cbk"/>
                                                     </constraints>
@@ -2356,7 +2350,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7d4-6C-p9E">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7d4-6C-p9E">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="isn-fN-WRi"/>
                                                     </constraints>
@@ -2388,7 +2382,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bou-CD-MMl">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bou-CD-MMl">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="URt-q0-0vU"/>
                                                     </constraints>
@@ -2417,7 +2411,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5g-VR-ee7">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5g-VR-ee7">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="e3e-ZP-XXE"/>
                                                     </constraints>
@@ -2449,7 +2443,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wm7-AJ-HaJ">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wm7-AJ-HaJ">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="fDe-bj-HKZ"/>
                                                     </constraints>
@@ -2483,6 +2477,13 @@ Sending child data from this device to another device will REPLACE all child dat
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Childs Name" id="A5B-3r-3U8"/>
+                    <connections>
+                        <outlet property="birthdayField" destination="iRD-57-tIE" id="yiD-ll-nMv"/>
+                        <outlet property="genderField" destination="Tys-6C-91Y" id="EbP-fi-fNt"/>
+                        <outlet property="lengthField" destination="RWJ-hR-Gsp" id="Gtw-mo-BEy"/>
+                        <outlet property="nicknameField" destination="ujF-e7-cHG" id="0HA-bt-2I3"/>
+                        <outlet property="weightField" destination="YfA-ee-aW8" id="pO7-JT-QVJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29t-p5-2Ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2528,7 +2529,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="rMo-Dj-v9v" kind="push" id="wlw-WY-HDp"/>
+                                    <segue destination="rMo-Dj-v9v" kind="push" identifier="AdviceList_AdviceDetail" id="wlw-WY-HDp"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2545,10 +2546,10 @@ Sending child data from this device to another device will REPLACE all child dat
             </objects>
             <point key="canvasLocation" x="1809" y="2220"/>
         </scene>
-        <!--View Controller-->
+        <!--Advice Detail View Controller-->
         <scene sceneID="Mjt-2d-fHw">
             <objects>
-                <viewController id="rMo-Dj-v9v" sceneMemberID="viewController">
+                <viewController id="rMo-Dj-v9v" customClass="KUMAdviceDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KN8-9a-rj4">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2566,6 +2567,9 @@ Sending child data from this device to another device will REPLACE all child dat
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dTn-zQ-l0O"/>
+                    <connections>
+                        <outlet property="theWebView" destination="U4g-OB-0EK" id="JhN-zF-GGT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftx-sf-UFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2690,8 +2694,24 @@ Sending child data from this device to another device will REPLACE all child dat
         <image name="dad.png" width="1024" height="1044"/>
     </resources>
     <classes>
+        <class className="KUMAdviceDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMAdviceDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="theWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
         <class className="KUMAdviceViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMAdviceViewController.h"/>
+        </class>
+        <class className="KUMChildDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMChildDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="birthdayField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="genderField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="lengthField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nicknameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="weightField" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="KUMChildListViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMChildListViewController.h"/>
@@ -2712,7 +2732,7 @@ Sending child data from this device to another device will REPLACE all child dat
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="MB8-6E-suI"/>
+        <segue reference="p8C-rV-yV3"/>
         <segue reference="dGe-Bk-buF"/>
     </inferredMetricsTieBreakers>
 </document>

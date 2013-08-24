@@ -14,6 +14,13 @@
 
 
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    KUMAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    _childListArray = [appDelegate.dataDictionary objectForKey:@"Children"];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"ChildList_ChildDetail"])
@@ -33,7 +40,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+return [_childListArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -41,9 +48,7 @@
     static NSString *CellIdentifier = @"childListCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    cell.textLabel.text = @"First text";
-    cell.detailTextLabel.text = @"First detail";
+    cell.textLabel.text = [_childListArray objectAtIndex:indexPath.row];
     
     return cell;
 }

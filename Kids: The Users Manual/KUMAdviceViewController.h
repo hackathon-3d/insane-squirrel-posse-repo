@@ -10,4 +10,6 @@
 
 @interface KUMAdviceViewController : UITableViewController
 
+@property (strong, nonatomic) NSDictionary *adviceListDictionary;
+
 @end

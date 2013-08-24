@@ -7,8 +7,28 @@
 //
 
 #import "KUMAdviceViewController.h"
+#import "KUMAppDelegate.h"
 
 @implementation KUMAdviceViewController
+
+
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    KUMAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    _adviceListDictionary = [appDelegate.dataDictionary objectForKey:@"Advice"];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"AdviceList_AdviceDetail"])
+    {
+        KUMAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+        appDelegate.segueParameter = [NSNumber numberWithInteger:[[self.tableView indexPathForSelectedRow] row]];
+        NSLog(@"segue triggered: AdviceList->AdviceDetail, index[%@]", appDelegate.segueParameter);
+    }
+}
 
 
 
@@ -18,8 +38,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
-    return 1;
+    return [[_adviceListDictionary objectForKey:@"Advice"] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -27,8 +46,7 @@
     static NSString *CellIdentifier = @"adviceCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    cell.textLabel.text = @"First text";
+    cell.textLabel.text = [[_adviceListDictionary objectForKey:@"Advice"] objectAtIndex:indexPath.row];
     
     return cell;
 }

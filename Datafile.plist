@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Children</key>
+	<array>
+		<string>Junior</string>
+	</array>
+	<key>Advice</key>
+	<dict>
+		<key>Advice</key>
+		<array>
+			<string>Advice 1</string>
+			<string>Advice 2</string>
+		</array>
+		<key>AdviceURL</key>
+		<array>
+			<string>http://www.apple.com</string>
+			<string>http://developer.apple.com</string>
+		</array>
+	</dict>
+	<key>Details</key>
+	<dict>
+		<key>Birthday</key>
+		<array>
+			<string>1-1-2000</string>
+		</array>
+		<key>Gender</key>
+		<array>
+			<string>M</string>
+		</array>
+		<key>Nickname</key>
+		<array>
+			<string>Nick Is My Name</string>
+		</array>
+		<key>Length</key>
+		<array>
+			<string>21&quot;</string>
+		</array>
+		<key>Weight</key>
+		<array>
+			<string>9lb 6oz</string>
+		</array>
+	</dict>
+</dict>
+</plist>

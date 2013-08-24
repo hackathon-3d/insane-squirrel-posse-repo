@@ -10,4 +10,6 @@
 
 @interface KUMChildListViewController : UITableViewController
 
+@property (strong, nonatomic) NSArray *childListArray;
+
 @end
