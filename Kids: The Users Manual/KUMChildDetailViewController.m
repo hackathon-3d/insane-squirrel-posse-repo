@@ -30,7 +30,6 @@
     _lengthField.text = [[_childDetailDictionary objectForKey:@"Length"] objectAtIndex:[appDelegate.segueParameter integerValue]];
     _weightField.text = [[_childDetailDictionary objectForKey:@"Weight"] objectAtIndex:[appDelegate.segueParameter integerValue]];
     
-    
     _hepbField.text = [[_childDetailDictionary objectForKey:@"Shot_hepb"] objectAtIndex:[appDelegate.segueParameter integerValue]];
     _rvField.text = [[_childDetailDictionary objectForKey:@"Shot_rv"] objectAtIndex:[appDelegate.segueParameter integerValue]];
     _dtapField.text = [[_childDetailDictionary objectForKey:@"Shot_dtap"] objectAtIndex:[appDelegate.segueParameter integerValue]];
@@ -58,12 +57,188 @@
     _sleepOverField.text = [[_childDetailDictionary objectForKey:@"Sleepover"] objectAtIndex:[appDelegate.segueParameter integerValue]];
 }
 
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+- (void)viewWillDisappear:(BOOL)animated
 {
-    NSLog(@"tfShouldBeginEditing...");
-    [_textFieldBeingEdited resignFirstResponder];
-    _textFieldBeingEdited = textField;
-    return TRUE;
+    if ([self isMovingFromParentViewController]) {
+        NSLog(@"viewWillDisappear...Save the data");
+        
+        KUMAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+        NSString *error;
+        NSData *dictToData = [NSPropertyListSerialization dataFromPropertyList:appDelegate.dataDictionary format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
+        
+        NSMutableDictionary *newDataDictionary = (NSMutableDictionary *)[NSPropertyListSerialization
+                                                 propertyListFromData:dictToData
+                                                 mutabilityOption:NSPropertyListMutableContainersAndLeaves
+                                                 format:NULL
+                                                 errorDescription:&error];
+        NSMutableDictionary *newChildDetailDictionary = [newDataDictionary objectForKey:@"Details"];
+        
+        NSString *theValue = _genderField.text;
+        NSMutableArray *newArray = [newChildDetailDictionary objectForKey:@"Gender"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Gender"];
+        
+        theValue = _birthdayField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Birthday"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Birthday"];
+        
+        theValue = _nicknameField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Nickname"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Nickname"];
+        
+        theValue = _lengthField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Length"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Length"];
+        
+        theValue = _weightField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Weight"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Weight"];
+        
+        theValue = _hepbField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Shot_hepb"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Shot_hepb"];
+        
+        theValue = _rvField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Shot_rv"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Shot_rv"];
+        
+        theValue = _dtapField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Shot_dtap"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Shot_dtap"];
+        
+        theValue = _hibField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Shot_hib"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Shot_hib"];
+        
+        theValue = _pcvField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Shot_pcv"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Shot_pcv"];
+        
+        theValue = _ipvField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Shot_ipv"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Shot_ipv"];
+        
+        theValue = _influenzaField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Shot_influenza"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Shot_influenza"];
+        
+        theValue = _mmrField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Shot_mmr"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Shot_mmr"];
+        
+        theValue = _varicellaField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Shot_varicella"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Shot_varicella"];
+        
+        theValue = _hepaField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Shot_hepa"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Shot_hepa"];
+        
+        theValue = _teethingField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Teething"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Teething"];
+        
+        theValue = _crawlingField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Crawling"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Crawling"];
+        
+        theValue = _stepsField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Steps"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Steps"];
+        
+        theValue = _daddaField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Dadda"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Dadda"];
+        
+        theValue = _mommaField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Momma"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Momma"];
+        
+        theValue = _timeoutField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Timeout"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Timeout"];
+        
+        theValue = _babysitterField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Babysitter"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Babysitter"];
+        
+        theValue = _pottyField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Potty"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Potty"];
+        
+        theValue = _toothField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Tooth"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Tooth"];
+        
+        theValue = _tricycleField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Tricycle"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Tricycle"];
+        
+        theValue = _bicycleField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Bicycle"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Bicycle"];
+        
+        theValue = _trainingWheelsField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"TrainingWheels"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"TrainingWheels"];
+        
+        theValue = _schoolField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"School"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"School"];
+        
+        theValue = _sleepOverField.text;
+        newArray = [newChildDetailDictionary objectForKey:@"Sleepover"];
+        [newArray setObject:theValue atIndexedSubscript:[appDelegate.segueParameter integerValue]];
+        [newChildDetailDictionary setValue:newArray forKey:@"Sleepover"];
+        
+        [newDataDictionary setObject:newChildDetailDictionary forKey:@"Details"];
+        NSLog(@"newDict: %@", newDataDictionary);
+        BOOL outcome = [newDataDictionary writeToFile:[[NSBundle mainBundle] pathForResource:@"Datafile" ofType:@"plist"] atomically:YES];
+        NSLog(@"WriteFile: %d", outcome);
+    }
 }
+
+//- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+//{
+//    NSLog(@"tfShouldBeginEditing...");
+//    [_textFieldBeingEdited resignFirstResponder];
+//    _textFieldBeingEdited = textField;
+//    return TRUE;
+//}
+//
+//- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSLog(@"tvDidSelectRow...");
+//    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    [_textFieldBeingEdited resignFirstResponder];
+//    _textFieldBeingEdited = nil;
+//}
 
 @end

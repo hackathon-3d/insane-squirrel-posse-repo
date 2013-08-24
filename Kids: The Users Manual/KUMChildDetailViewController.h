@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KUMChildDetailViewController : UITableViewController
+@interface KUMChildDetailViewController : UITableViewController <UITableViewDelegate, UITextFieldDelegate>
 
 @property (strong, nonatomic) NSDictionary *childDetailDictionary;
 @property (strong, nonatomic) UITextField *textFieldBeingEdited;
