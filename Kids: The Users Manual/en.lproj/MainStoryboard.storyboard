@@ -289,7 +289,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="zkZ-J7-D2Y"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -421,7 +421,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="Ujy-Ww-45o"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -453,7 +453,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="IW0-af-oFW"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -485,7 +485,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="wWN-ia-k9e"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -517,7 +517,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="58E-7y-nbx"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -549,7 +549,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="O4r-Y3-fGZ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -581,7 +581,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="9PV-Mg-Dcy"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -613,7 +613,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="7Js-Si-iZh"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -645,7 +645,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="VmQ-3f-I0L"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -677,7 +677,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="YhW-rz-zze"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -709,7 +709,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="e6m-v2-JsO"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1183,10 +1183,34 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Childs Name" id="W4C-rx-dvJ"/>
                     <connections>
+                        <outlet property="babysitterField" destination="VsB-RA-uM9" id="1fE-lh-8gI"/>
+                        <outlet property="bicycleField" destination="myd-NL-d6F" id="Wks-3y-wkO"/>
                         <outlet property="birthdayField" destination="hq7-IN-xgx" id="3iZ-X4-nQ7"/>
+                        <outlet property="crawlingField" destination="WQO-gV-pLa" id="FW7-39-Twc"/>
+                        <outlet property="daddaField" destination="g6o-Qh-Nlk" id="o1t-50-EmH"/>
+                        <outlet property="dtapField" destination="rLw-zA-I7L" id="24m-YX-bWE"/>
                         <outlet property="genderField" destination="jVc-4I-KQo" id="sLK-4C-K5u"/>
+                        <outlet property="hepaField" destination="3CI-6f-Kp2" id="MF0-ce-8gJ"/>
+                        <outlet property="hepbField" destination="Yy2-dx-fpc" id="NVM-UC-vX7"/>
+                        <outlet property="hibField" destination="i9c-ln-tEi" id="ObL-gE-p0b"/>
+                        <outlet property="influenzaField" destination="bI3-8G-ldY" id="bBc-s7-w8e"/>
+                        <outlet property="ipvField" destination="sGM-TF-GGn" id="MLb-oL-8Kz"/>
                         <outlet property="lengthField" destination="4N1-hz-LTu" id="zvi-70-Z4k"/>
+                        <outlet property="mmrField" destination="xDy-g6-B0b" id="P1P-12-8Dv"/>
+                        <outlet property="mommaField" destination="upq-Ls-g2J" id="CWz-T8-g0b"/>
                         <outlet property="nicknameField" destination="XIn-e3-KXv" id="dNk-wB-zhV"/>
+                        <outlet property="pcvField" destination="1qC-zR-s0V" id="7EI-G0-zwA"/>
+                        <outlet property="pottyField" destination="Uhh-H2-aa4" id="R8Q-SJ-enN"/>
+                        <outlet property="rvField" destination="4zl-fd-lby" id="FZb-QH-PLV"/>
+                        <outlet property="schoolField" destination="FvH-JW-mYu" id="Z7o-iq-25b"/>
+                        <outlet property="sleepOverField" destination="J4X-9q-p2Q" id="QCI-pO-diH"/>
+                        <outlet property="stepsField" destination="ZjN-ge-QEp" id="Jh0-gp-pss"/>
+                        <outlet property="teethingField" destination="iXX-Ck-1ft" id="yu8-fv-BbO"/>
+                        <outlet property="timeoutField" destination="Jsv-lM-j4F" id="inh-84-1GU"/>
+                        <outlet property="toothField" destination="7UC-FT-l7l" id="rzg-uj-5gY"/>
+                        <outlet property="trainingWheelsField" destination="MYa-du-iAk" id="cnf-9i-Pjt"/>
+                        <outlet property="tricycleField" destination="pNj-PQ-x8E" id="hoc-u0-Ipo"/>
+                        <outlet property="varicellaField" destination="J48-Ru-tr5" id="fCO-wL-QeZ"/>
                         <outlet property="weightField" destination="11R-Gl-EXe" id="a5t-yj-ket"/>
                     </connections>
                 </tableViewController>
@@ -1587,7 +1611,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="WDi-ng-P4C"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1719,7 +1743,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="lJl-U4-aYG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1751,7 +1775,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="nnI-Ep-cne"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1783,7 +1807,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="TzV-vA-k4G"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1815,7 +1839,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="ayt-tk-KB1"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1847,7 +1871,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="1e4-HO-idT"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1879,7 +1903,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="Pe0-BA-OhD"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1911,7 +1935,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="UrS-50-J4I"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1943,7 +1967,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="jcM-6U-QcU"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1975,7 +1999,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="Pgp-Ih-Q1e"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2007,7 +2031,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                                         <constraint firstAttribute="width" constant="97" id="R80-Fi-8z8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2478,10 +2502,34 @@ Sending child data from this device to another device will REPLACE all child dat
                     </tableView>
                     <navigationItem key="navigationItem" title="Childs Name" id="A5B-3r-3U8"/>
                     <connections>
+                        <outlet property="babysitterField" destination="KpQ-Li-Sis" id="KZW-K0-wyc"/>
+                        <outlet property="bicycleField" destination="7d4-6C-p9E" id="bpK-gr-ucq"/>
                         <outlet property="birthdayField" destination="iRD-57-tIE" id="yiD-ll-nMv"/>
+                        <outlet property="crawlingField" destination="nHm-n5-Bom" id="dDv-ai-i9U"/>
+                        <outlet property="daddaField" destination="BCK-Rw-lcl" id="Lna-VX-EGX"/>
+                        <outlet property="dtapField" destination="WFG-Zn-Df6" id="9if-jM-Ns2"/>
                         <outlet property="genderField" destination="Tys-6C-91Y" id="EbP-fi-fNt"/>
+                        <outlet property="hepaField" destination="An9-P1-daf" id="L3d-ko-jyZ"/>
+                        <outlet property="hepbField" destination="gYu-uX-vDD" id="Leq-dd-lJo"/>
+                        <outlet property="hibField" destination="Lp5-EV-TY6" id="Ce2-8a-9z1"/>
+                        <outlet property="influenzaField" destination="aYz-Y4-CHF" id="gin-Sg-O8q"/>
+                        <outlet property="ipvField" destination="1W6-qL-zGJ" id="1VV-aK-cHJ"/>
                         <outlet property="lengthField" destination="RWJ-hR-Gsp" id="Gtw-mo-BEy"/>
+                        <outlet property="mmrField" destination="dDU-cb-U3s" id="MBo-lG-ncL"/>
+                        <outlet property="mommaField" destination="Bwu-AZ-9ua" id="6t9-2P-pOT"/>
                         <outlet property="nicknameField" destination="ujF-e7-cHG" id="0HA-bt-2I3"/>
+                        <outlet property="pcvField" destination="FYd-LM-Cbp" id="JhN-la-cAi"/>
+                        <outlet property="pottyField" destination="zq5-Yy-tDs" id="l1U-Ph-fOC"/>
+                        <outlet property="rvField" destination="G0a-nP-0dn" id="g7c-ke-Hre"/>
+                        <outlet property="schoolField" destination="N5g-VR-ee7" id="GFj-9x-he0"/>
+                        <outlet property="sleepOverField" destination="Wm7-AJ-HaJ" id="6bf-t5-hAr"/>
+                        <outlet property="stepsField" destination="VCL-1u-Nh7" id="5Dv-NJ-aFL"/>
+                        <outlet property="teethingField" destination="7Yw-76-orR" id="wVs-U8-pvM"/>
+                        <outlet property="timeoutField" destination="dYC-TA-Ycf" id="bOT-jf-I6F"/>
+                        <outlet property="toothField" destination="PWA-Hn-hvg" id="9PS-Ih-uih"/>
+                        <outlet property="trainingWheelsField" destination="bou-CD-MMl" id="rRq-2r-nOO"/>
+                        <outlet property="tricycleField" destination="NRs-si-1Me" id="zxA-uS-2T4"/>
+                        <outlet property="varicellaField" destination="JD9-zr-bNb" id="oM0-FO-e6y"/>
                         <outlet property="weightField" destination="YfA-ee-aW8" id="pO7-JT-QVJ"/>
                     </connections>
                 </tableViewController>
@@ -2693,39 +2741,6 @@ Sending child data from this device to another device will REPLACE all child dat
         <image name="Sync.png" width="200" height="134"/>
         <image name="dad.png" width="1024" height="1044"/>
     </resources>
-    <classes>
-        <class className="KUMAdviceDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMAdviceDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="theWebView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="KUMAdviceViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMAdviceViewController.h"/>
-        </class>
-        <class className="KUMChildDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMChildDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="birthdayField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="genderField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="lengthField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="nicknameField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="weightField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="KUMChildListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMChildListViewController.h"/>
-        </class>
-        <class className="KUMDaddyViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMDaddyViewController.h"/>
-        </class>
-        <class className="KUMMommyViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMMommyViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
