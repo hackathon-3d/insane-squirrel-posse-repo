@@ -17,10 +17,10 @@
 		848358C017C83FA000CE5A18 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358BF17C83FA000CE5A18 /* Default@2x.png */; };
 		848358C217C83FA000CE5A18 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358C117C83FA000CE5A18 /* Default-568h@2x.png */; };
 		848358C517C83FA000CE5A18 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848358C317C83FA000CE5A18 /* MainStoryboard.storyboard */; };
-		848358C817C83FA000CE5A18 /* KUMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848358C717C83FA000CE5A18 /* KUMFirstViewController.m */; };
+		848358C817C83FA000CE5A18 /* KUMMommyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848358C717C83FA000CE5A18 /* KUMMommyViewController.m */; };
 		848358CA17C83FA000CE5A18 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358C917C83FA000CE5A18 /* first.png */; };
 		848358CC17C83FA000CE5A18 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358CB17C83FA000CE5A18 /* first@2x.png */; };
-		848358CF17C83FA000CE5A18 /* KUMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848358CE17C83FA000CE5A18 /* KUMSecondViewController.m */; };
+		848358CF17C83FA000CE5A18 /* KUMDaddyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848358CE17C83FA000CE5A18 /* KUMDaddyViewController.m */; };
 		848358D117C83FA000CE5A18 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358D017C83FA000CE5A18 /* second.png */; };
 		848358D317C83FA000CE5A18 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358D217C83FA000CE5A18 /* second@2x.png */; };
 /* End PBXBuildFile section */
@@ -40,12 +40,12 @@
 		848358BF17C83FA000CE5A18 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		848358C117C83FA000CE5A18 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		848358C417C83FA000CE5A18 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		848358C617C83FA000CE5A18 /* KUMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KUMFirstViewController.h; sourceTree = "<group>"; };
-		848358C717C83FA000CE5A18 /* KUMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KUMFirstViewController.m; sourceTree = "<group>"; };
+		848358C617C83FA000CE5A18 /* KUMMommyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KUMMommyViewController.h; sourceTree = "<group>"; };
+		848358C717C83FA000CE5A18 /* KUMMommyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KUMMommyViewController.m; sourceTree = "<group>"; };
 		848358C917C83FA000CE5A18 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		848358CB17C83FA000CE5A18 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		848358CD17C83FA000CE5A18 /* KUMSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KUMSecondViewController.h; sourceTree = "<group>"; };
-		848358CE17C83FA000CE5A18 /* KUMSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KUMSecondViewController.m; sourceTree = "<group>"; };
+		848358CD17C83FA000CE5A18 /* KUMDaddyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KUMDaddyViewController.h; sourceTree = "<group>"; };
+		848358CE17C83FA000CE5A18 /* KUMDaddyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KUMDaddyViewController.m; sourceTree = "<group>"; };
 		848358D017C83FA000CE5A18 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		848358D217C83FA000CE5A18 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,12 +97,12 @@
 				848358BA17C83FA000CE5A18 /* KUMAppDelegate.h */,
 				848358BB17C83FA000CE5A18 /* KUMAppDelegate.m */,
 				848358C317C83FA000CE5A18 /* MainStoryboard.storyboard */,
-				848358C617C83FA000CE5A18 /* KUMFirstViewController.h */,
-				848358C717C83FA000CE5A18 /* KUMFirstViewController.m */,
+				848358C617C83FA000CE5A18 /* KUMMommyViewController.h */,
+				848358C717C83FA000CE5A18 /* KUMMommyViewController.m */,
 				848358C917C83FA000CE5A18 /* first.png */,
 				848358CB17C83FA000CE5A18 /* first@2x.png */,
-				848358CD17C83FA000CE5A18 /* KUMSecondViewController.h */,
-				848358CE17C83FA000CE5A18 /* KUMSecondViewController.m */,
+				848358CD17C83FA000CE5A18 /* KUMDaddyViewController.h */,
+				848358CE17C83FA000CE5A18 /* KUMDaddyViewController.m */,
 				848358D017C83FA000CE5A18 /* second.png */,
 				848358D217C83FA000CE5A18 /* second@2x.png */,
 				848358B217C83FA000CE5A18 /* Supporting Files */,
@@ -197,8 +197,8 @@
 			files = (
 				848358B817C83FA000CE5A18 /* main.m in Sources */,
 				848358BC17C83FA000CE5A18 /* KUMAppDelegate.m in Sources */,
-				848358C817C83FA000CE5A18 /* KUMFirstViewController.m in Sources */,
-				848358CF17C83FA000CE5A18 /* KUMSecondViewController.m in Sources */,
+				848358C817C83FA000CE5A18 /* KUMMommyViewController.m in Sources */,
+				848358CF17C83FA000CE5A18 /* KUMDaddyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +321,7 @@
 				848358D817C83FA000CE5A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
