@@ -11,6 +11,9 @@
 		845E0A1C17C85D6500FFE1B6 /* GirlTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A1A17C85D6500FFE1B6 /* GirlTab.png */; };
 		845E0A1F17C85DE500FFE1B6 /* BoyTab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A1D17C85DE500FFE1B6 /* BoyTab@2x.png */; };
 		845E0A2017C85DE500FFE1B6 /* GirlTab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A1E17C85DE500FFE1B6 /* GirlTab@2x.png */; };
+		845E0A2217C87D7300FFE1B6 /* Sync.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A2117C87D7300FFE1B6 /* Sync.png */; };
+		845E0A2517C87E2000FFE1B6 /* dad.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A2317C87E2000FFE1B6 /* dad.png */; };
+		845E0A2617C87E2000FFE1B6 /* Mom2.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A2417C87E2000FFE1B6 /* Mom2.png */; };
 		848358AC17C83FA000CE5A18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848358AB17C83FA000CE5A18 /* UIKit.framework */; };
 		848358AE17C83FA000CE5A18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848358AD17C83FA000CE5A18 /* Foundation.framework */; };
 		848358B017C83FA000CE5A18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848358AF17C83FA000CE5A18 /* CoreGraphics.framework */; };
@@ -30,6 +33,9 @@
 		845E0A1A17C85D6500FFE1B6 /* GirlTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GirlTab.png; sourceTree = "<group>"; };
 		845E0A1D17C85DE500FFE1B6 /* BoyTab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoyTab@2x.png"; sourceTree = "<group>"; };
 		845E0A1E17C85DE500FFE1B6 /* GirlTab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GirlTab@2x.png"; sourceTree = "<group>"; };
+		845E0A2117C87D7300FFE1B6 /* Sync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sync.png; sourceTree = "<group>"; };
+		845E0A2317C87E2000FFE1B6 /* dad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dad.png; sourceTree = "<group>"; };
+		845E0A2417C87E2000FFE1B6 /* Mom2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mom2.png; sourceTree = "<group>"; };
 		848358A817C83FA000CE5A18 /* Kids: The Users Manual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids: The Users Manual.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848358AB17C83FA000CE5A18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		848358AD17C83FA000CE5A18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,6 +111,9 @@
 				845E0A1A17C85D6500FFE1B6 /* GirlTab.png */,
 				845E0A1D17C85DE500FFE1B6 /* BoyTab@2x.png */,
 				845E0A1E17C85DE500FFE1B6 /* GirlTab@2x.png */,
+				845E0A2117C87D7300FFE1B6 /* Sync.png */,
+				845E0A2317C87E2000FFE1B6 /* dad.png */,
+				845E0A2417C87E2000FFE1B6 /* Mom2.png */,
 				848358B217C83FA000CE5A18 /* Supporting Files */,
 			);
 			path = "Kids: The Users Manual";
@@ -185,6 +194,9 @@
 				845E0A1C17C85D6500FFE1B6 /* GirlTab.png in Resources */,
 				845E0A1F17C85DE500FFE1B6 /* BoyTab@2x.png in Resources */,
 				845E0A2017C85DE500FFE1B6 /* GirlTab@2x.png in Resources */,
+				845E0A2217C87D7300FFE1B6 /* Sync.png in Resources */,
+				845E0A2517C87E2000FFE1B6 /* dad.png in Resources */,
+				845E0A2617C87E2000FFE1B6 /* Mom2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
