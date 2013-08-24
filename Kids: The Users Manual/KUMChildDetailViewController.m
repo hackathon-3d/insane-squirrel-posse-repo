@@ -63,14 +63,15 @@
         NSLog(@"viewWillDisappear...Save the data");
         
         KUMAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-        NSString *error;
-        NSData *dictToData = [NSPropertyListSerialization dataFromPropertyList:appDelegate.dataDictionary format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
+        NSString *errorString;
+        NSData *dictToData = [NSPropertyListSerialization dataFromPropertyList:appDelegate.dataDictionary format:NSPropertyListXMLFormat_v1_0 errorDescription:&errorString];
         
         NSMutableDictionary *newDataDictionary = (NSMutableDictionary *)[NSPropertyListSerialization
                                                  propertyListFromData:dictToData
                                                  mutabilityOption:NSPropertyListMutableContainersAndLeaves
                                                  format:NULL
-                                                 errorDescription:&error];
+                                                 errorDescription:&errorString];
+        NSLog(@"DictFromData status: %@", errorString);
         NSMutableDictionary *newChildDetailDictionary = [newDataDictionary objectForKey:@"Details"];
         
         NSString *theValue = _genderField.text;
@@ -219,9 +220,42 @@
         [newChildDetailDictionary setValue:newArray forKey:@"Sleepover"];
         
         [newDataDictionary setObject:newChildDetailDictionary forKey:@"Details"];
+        NSDictionary *finalDict = [NSDictionary dictionaryWithDictionary:newDataDictionary];
         NSLog(@"newDict: %@", newDataDictionary);
-        BOOL outcome = [newDataDictionary writeToFile:[[NSBundle mainBundle] pathForResource:@"Datafile" ofType:@"plist"] atomically:YES];
-        NSLog(@"WriteFile: %d", outcome);
+        
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Datafile" ofType:@"plist"];
+        NSLog(@"filePath: %@", filePath);
+        
+        
+        
+        if (![NSPropertyListSerialization
+              propertyList: finalDict
+              isValidForFormat: NSPropertyListXMLFormat_v1_0]) {
+            NSLog (@"can't save as XML");
+            return;
+        }
+        NSError *error;
+        NSData *data =
+        [NSPropertyListSerialization dataWithPropertyList: finalDict
+                                                   format: NSPropertyListXMLFormat_v1_0
+                                                  options: 0
+                                                    error: &error];
+        if (data == nil) {
+            NSLog (@"error serializing to xml: %@", error);
+            return;
+        }
+        BOOL writeStatus = [data writeToFile: filePath
+                                     options: NSDataWritingAtomic
+                                       error: &error];
+        if (!writeStatus) {
+            NSLog (@"error writing to file: %@", error);
+            return;
+        }
+        
+        
+        
+        //BOOL outcome = [finalDict writeToFile:filePath atomically:NO];
+        //NSLog(@"WriteFile: %d", outcome);
     }
 }
 
