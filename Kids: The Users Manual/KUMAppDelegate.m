@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     _dataDictionary = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Datafile" ofType:@"plist"]];
+    NSLog(@"initialFilePath: %@", [[NSBundle mainBundle] pathForResource:@"Datafile" ofType:@"plist"]);
     return YES;
 }
 

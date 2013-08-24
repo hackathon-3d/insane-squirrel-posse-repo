@@ -10,13 +10,51 @@
 	<dict>
 		<key>Advice</key>
 		<array>
-			<string>Advice 1</string>
-			<string>Advice 2</string>
+			<string>Adjusting to a Time Change</string>
+			<string>Attachment to a Pacifier</string>
+			<string>Attachment to a Toy or Blanket</string>
+			<string>Bed-Wetting</string>
+			<string>Biting</string>
+			<string>Bossiness</string>
+			<string>Climbing</string>
+			<string>Clumsiness</string>
+			<string>Clinginess</string>
+			<string>Dawdling</string>
+			<string>Defiance</string>
+			<string>Early Risings</string>
+			<string>Fearlessness</string>
+			<string>Fear of Santa, Clowns, &amp; Other Characters</string>
+			<string>Fear of Crowds</string>
+			<string>Fear of Darkness</string>
+			<string>Fear of Doctors</string>
+			<string>Fear of Dogs</string>
+			<string>Fear of Strangers</string>
+			<string>Food Messiness</string>
+			<string>Food Strikes</string>
 		</array>
 		<key>AdviceURL</key>
 		<array>
-			<string>http://www.apple.com</string>
-			<string>http://developer.apple.com</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/adjusting-to-a-time-change.aspx#</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/attachment-to-pacifier.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/attachment-to-blanket.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/bed-wetting.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/biting.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/bossiness.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/climbing.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/clumsiness.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/clinginess.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/dawdling.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/defiance.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/early-risings.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/fearlessness.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/fear-of-characters.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/fear-of-crowds.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/fear-of-darkness.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/fear-of-doctors.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/fear-of-dogs.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/fear-of-strangers.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/food-messiness.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/food-strikes.aspx</string>
 		</array>
 	</dict>
 	<key>Details</key>
