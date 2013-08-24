@@ -1198,10 +1198,10 @@
             </objects>
             <point key="canvasLocation" x="2350" y="-574"/>
         </scene>
-        <!--Table View Controller - Q & A-->
+        <!--Advice View Controller - Q & A-->
         <scene sceneID="21f-ip-IIs">
             <objects>
-                <tableViewController id="gKn-wt-DNk" sceneMemberID="viewController">
+                <tableViewController id="gKn-wt-DNk" customClass="KUMAdviceViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7gE-i1-rGg">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2503,10 +2503,10 @@ Sending child data from this device to another device will REPLACE all child dat
             </objects>
             <point key="canvasLocation" x="1273" y="1497"/>
         </scene>
-        <!--Table View Controller - Advice-->
+        <!--Advice View Controller - Advice-->
         <scene sceneID="N9u-3G-hsF">
             <objects>
-                <tableViewController id="c1q-Dn-brg" sceneMemberID="viewController">
+                <tableViewController id="c1q-Dn-brg" customClass="KUMAdviceViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="UH0-fZ-4RY">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2690,6 +2690,9 @@ Sending child data from this device to another device will REPLACE all child dat
         <image name="dad.png" width="1024" height="1044"/>
     </resources>
     <classes>
+        <class className="KUMAdviceViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMAdviceViewController.h"/>
+        </class>
         <class className="KUMChildListViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMChildListViewController.h"/>
         </class>
@@ -2709,7 +2712,7 @@ Sending child data from this device to another device will REPLACE all child dat
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="B5E-tp-zU5"/>
+        <segue reference="MB8-6E-suI"/>
         <segue reference="dGe-Bk-buF"/>
     </inferredMetricsTieBreakers>
 </document>
