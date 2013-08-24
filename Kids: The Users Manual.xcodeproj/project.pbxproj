@@ -16,6 +16,11 @@
 		845E0A2617C87E2000FFE1B6 /* Mom2.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A2417C87E2000FFE1B6 /* Mom2.png */; };
 		845E0A2917C8807C00FFE1B6 /* KUMChildListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E0A2817C8807C00FFE1B6 /* KUMChildListViewController.m */; };
 		845E0A2C17C88EC300FFE1B6 /* KUMAdviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E0A2B17C88EC300FFE1B6 /* KUMAdviceViewController.m */; };
+		845E0A3017C892C900FFE1B6 /* bookIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A2F17C892C900FFE1B6 /* bookIcon.png */; };
+		845E0A3417C892EE00FFE1B6 /* bookIcon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A3317C892EE00FFE1B6 /* bookIcon_57.png */; };
+		845E0A3617C8939700FFE1B6 /* Datafile.plist in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A3517C8939700FFE1B6 /* Datafile.plist */; };
+		845E0A3917C89BA100FFE1B6 /* KUMAdviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E0A3817C89BA000FFE1B6 /* KUMAdviceDetailViewController.m */; };
+		845E0A3C17C8A07000FFE1B6 /* KUMChildDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E0A3B17C8A07000FFE1B6 /* KUMChildDetailViewController.m */; };
 		848358AC17C83FA000CE5A18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848358AB17C83FA000CE5A18 /* UIKit.framework */; };
 		848358AE17C83FA000CE5A18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848358AD17C83FA000CE5A18 /* Foundation.framework */; };
 		848358B017C83FA000CE5A18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848358AF17C83FA000CE5A18 /* CoreGraphics.framework */; };
@@ -42,6 +47,13 @@
 		845E0A2817C8807C00FFE1B6 /* KUMChildListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUMChildListViewController.m; sourceTree = "<group>"; };
 		845E0A2A17C88EC300FFE1B6 /* KUMAdviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUMAdviceViewController.h; sourceTree = "<group>"; };
 		845E0A2B17C88EC300FFE1B6 /* KUMAdviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUMAdviceViewController.m; sourceTree = "<group>"; };
+		845E0A2F17C892C900FFE1B6 /* bookIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookIcon.png; sourceTree = "<group>"; };
+		845E0A3317C892EE00FFE1B6 /* bookIcon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookIcon_57.png; sourceTree = "<group>"; };
+		845E0A3517C8939700FFE1B6 /* Datafile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Datafile.plist; sourceTree = "<group>"; };
+		845E0A3717C89BA000FFE1B6 /* KUMAdviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUMAdviceDetailViewController.h; sourceTree = "<group>"; };
+		845E0A3817C89BA000FFE1B6 /* KUMAdviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUMAdviceDetailViewController.m; sourceTree = "<group>"; };
+		845E0A3A17C8A07000FFE1B6 /* KUMChildDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUMChildDetailViewController.h; sourceTree = "<group>"; };
+		845E0A3B17C8A07000FFE1B6 /* KUMChildDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUMChildDetailViewController.m; sourceTree = "<group>"; };
 		848358A817C83FA000CE5A18 /* Kids: The Users Manual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids: The Users Manual.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848358AB17C83FA000CE5A18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		848358AD17C83FA000CE5A18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +91,9 @@
 		8483589F17C83F9F00CE5A18 = {
 			isa = PBXGroup;
 			children = (
+				845E0A3317C892EE00FFE1B6 /* bookIcon_57.png */,
+				845E0A2F17C892C900FFE1B6 /* bookIcon.png */,
+				845E0A3517C8939700FFE1B6 /* Datafile.plist */,
 				848358B117C83FA000CE5A18 /* Kids: The Users Manual */,
 				848358AA17C83FA000CE5A18 /* Frameworks */,
 				848358A917C83FA000CE5A18 /* Products */,
@@ -115,8 +130,12 @@
 				848358CE17C83FA000CE5A18 /* KUMDaddyViewController.m */,
 				845E0A2717C8807C00FFE1B6 /* KUMChildListViewController.h */,
 				845E0A2817C8807C00FFE1B6 /* KUMChildListViewController.m */,
+				845E0A3A17C8A07000FFE1B6 /* KUMChildDetailViewController.h */,
+				845E0A3B17C8A07000FFE1B6 /* KUMChildDetailViewController.m */,
 				845E0A2A17C88EC300FFE1B6 /* KUMAdviceViewController.h */,
 				845E0A2B17C88EC300FFE1B6 /* KUMAdviceViewController.m */,
+				845E0A3717C89BA000FFE1B6 /* KUMAdviceDetailViewController.h */,
+				845E0A3817C89BA000FFE1B6 /* KUMAdviceDetailViewController.m */,
 				845E0A1917C85D6500FFE1B6 /* BoyTab.png */,
 				845E0A1A17C85D6500FFE1B6 /* GirlTab.png */,
 				845E0A1D17C85DE500FFE1B6 /* BoyTab@2x.png */,
@@ -207,6 +226,9 @@
 				845E0A2217C87D7300FFE1B6 /* Sync.png in Resources */,
 				845E0A2517C87E2000FFE1B6 /* dad.png in Resources */,
 				845E0A2617C87E2000FFE1B6 /* Mom2.png in Resources */,
+				845E0A3017C892C900FFE1B6 /* bookIcon.png in Resources */,
+				845E0A3417C892EE00FFE1B6 /* bookIcon_57.png in Resources */,
+				845E0A3617C8939700FFE1B6 /* Datafile.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +245,8 @@
 				848358CF17C83FA000CE5A18 /* KUMDaddyViewController.m in Sources */,
 				845E0A2917C8807C00FFE1B6 /* KUMChildListViewController.m in Sources */,
 				845E0A2C17C88EC300FFE1B6 /* KUMAdviceViewController.m in Sources */,
+				845E0A3917C89BA100FFE1B6 /* KUMAdviceDetailViewController.m in Sources */,
+				845E0A3C17C8A07000FFE1B6 /* KUMChildDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
