@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845E0A1B17C85D6500FFE1B6 /* BoyTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A1917C85D6500FFE1B6 /* BoyTab.png */; };
+		845E0A1C17C85D6500FFE1B6 /* GirlTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A1A17C85D6500FFE1B6 /* GirlTab.png */; };
+		845E0A1F17C85DE500FFE1B6 /* BoyTab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A1D17C85DE500FFE1B6 /* BoyTab@2x.png */; };
+		845E0A2017C85DE500FFE1B6 /* GirlTab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E0A1E17C85DE500FFE1B6 /* GirlTab@2x.png */; };
 		848358AC17C83FA000CE5A18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848358AB17C83FA000CE5A18 /* UIKit.framework */; };
 		848358AE17C83FA000CE5A18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848358AD17C83FA000CE5A18 /* Foundation.framework */; };
 		848358B017C83FA000CE5A18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848358AF17C83FA000CE5A18 /* CoreGraphics.framework */; };
@@ -18,14 +22,14 @@
 		848358C217C83FA000CE5A18 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358C117C83FA000CE5A18 /* Default-568h@2x.png */; };
 		848358C517C83FA000CE5A18 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848358C317C83FA000CE5A18 /* MainStoryboard.storyboard */; };
 		848358C817C83FA000CE5A18 /* KUMMommyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848358C717C83FA000CE5A18 /* KUMMommyViewController.m */; };
-		848358CA17C83FA000CE5A18 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358C917C83FA000CE5A18 /* first.png */; };
-		848358CC17C83FA000CE5A18 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358CB17C83FA000CE5A18 /* first@2x.png */; };
 		848358CF17C83FA000CE5A18 /* KUMDaddyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848358CE17C83FA000CE5A18 /* KUMDaddyViewController.m */; };
-		848358D117C83FA000CE5A18 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358D017C83FA000CE5A18 /* second.png */; };
-		848358D317C83FA000CE5A18 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848358D217C83FA000CE5A18 /* second@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		845E0A1917C85D6500FFE1B6 /* BoyTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoyTab.png; sourceTree = "<group>"; };
+		845E0A1A17C85D6500FFE1B6 /* GirlTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GirlTab.png; sourceTree = "<group>"; };
+		845E0A1D17C85DE500FFE1B6 /* BoyTab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoyTab@2x.png"; sourceTree = "<group>"; };
+		845E0A1E17C85DE500FFE1B6 /* GirlTab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GirlTab@2x.png"; sourceTree = "<group>"; };
 		848358A817C83FA000CE5A18 /* Kids: The Users Manual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids: The Users Manual.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848358AB17C83FA000CE5A18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		848358AD17C83FA000CE5A18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,12 +46,8 @@
 		848358C417C83FA000CE5A18 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		848358C617C83FA000CE5A18 /* KUMMommyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KUMMommyViewController.h; sourceTree = "<group>"; };
 		848358C717C83FA000CE5A18 /* KUMMommyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KUMMommyViewController.m; sourceTree = "<group>"; };
-		848358C917C83FA000CE5A18 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		848358CB17C83FA000CE5A18 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		848358CD17C83FA000CE5A18 /* KUMDaddyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KUMDaddyViewController.h; sourceTree = "<group>"; };
 		848358CE17C83FA000CE5A18 /* KUMDaddyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KUMDaddyViewController.m; sourceTree = "<group>"; };
-		848358D017C83FA000CE5A18 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		848358D217C83FA000CE5A18 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +99,12 @@
 				848358C317C83FA000CE5A18 /* MainStoryboard.storyboard */,
 				848358C617C83FA000CE5A18 /* KUMMommyViewController.h */,
 				848358C717C83FA000CE5A18 /* KUMMommyViewController.m */,
-				848358C917C83FA000CE5A18 /* first.png */,
-				848358CB17C83FA000CE5A18 /* first@2x.png */,
 				848358CD17C83FA000CE5A18 /* KUMDaddyViewController.h */,
 				848358CE17C83FA000CE5A18 /* KUMDaddyViewController.m */,
-				848358D017C83FA000CE5A18 /* second.png */,
-				848358D217C83FA000CE5A18 /* second@2x.png */,
+				845E0A1917C85D6500FFE1B6 /* BoyTab.png */,
+				845E0A1A17C85D6500FFE1B6 /* GirlTab.png */,
+				845E0A1D17C85DE500FFE1B6 /* BoyTab@2x.png */,
+				845E0A1E17C85DE500FFE1B6 /* GirlTab@2x.png */,
 				848358B217C83FA000CE5A18 /* Supporting Files */,
 			);
 			path = "Kids: The Users Manual";
@@ -181,10 +181,10 @@
 				848358C017C83FA000CE5A18 /* Default@2x.png in Resources */,
 				848358C217C83FA000CE5A18 /* Default-568h@2x.png in Resources */,
 				848358C517C83FA000CE5A18 /* MainStoryboard.storyboard in Resources */,
-				848358CA17C83FA000CE5A18 /* first.png in Resources */,
-				848358CC17C83FA000CE5A18 /* first@2x.png in Resources */,
-				848358D117C83FA000CE5A18 /* second.png in Resources */,
-				848358D317C83FA000CE5A18 /* second@2x.png in Resources */,
+				845E0A1B17C85D6500FFE1B6 /* BoyTab.png in Resources */,
+				845E0A1C17C85D6500FFE1B6 /* GirlTab.png in Resources */,
+				845E0A1F17C85DE500FFE1B6 /* BoyTab@2x.png in Resources */,
+				845E0A2017C85DE500FFE1B6 /* GirlTab@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
