@@ -69,6 +69,30 @@
 			<string>Wandering Off</string>
 			<string>Undressing</string>
 			<string>Whining</string>
+			<string>A cold or something Serious</string>
+			<string>Help Baby Gas</string>
+			<string>Baby Heart Murmur</string>
+			<string>In case of Fever</string>
+			<string>Baby Acne</string>
+			<string>Help Babies Runny Nose</string>
+			<string>Baby Birthmarks</string>
+			<string>Chicken Pox</string>
+			<string>Bright Red Cheeks?</string>
+			<string>Ice Ice Baby frostbite</string>
+			<string>Baby Hives</string>
+			<string>Yellow Skin?</string>
+			<string>Fever? Runny Nose? Caugh? Measles?</string>
+			<string>Moles</string>
+			<string>Pin Worm</string>
+			<string>Poisen Ivy/Oak</string>
+			<string>Diaper Rash</string>
+			<string>Warts</string>
+			<string>Red Spots</string>
+			<string>Croup</string>
+			<string>Impetigo</string>
+			<string>Reye&apos;s Syndrome</string>
+			<string>Respiratory syncytial virus</string>
+			<string>Crying, snoring and sleep</string>
 		</array>
 		<key>AdviceURL</key>
 		<array>
@@ -131,6 +155,30 @@
 			<string>http://www.whattoexpect.com/toddler/behavior/wandering-off.aspx</string>
 			<string>http://www.whattoexpect.com/toddler/behavior/undressing.aspx</string>
 			<string>http://www.whattoexpect.com/toddler/behavior/whining.aspx</string>
+			<string>http://www.babycenter.com/404_how-can-i-tell-if-my-baby-has-a-cold-or-something-more-serio_11688.bc</string>
+			<string>http://www.webmd.com/parenting/baby/crying-colic-9/infant-gas</string>
+			<string>http://www.dailymail.co.uk/femail/article-98275/My-baby-heart-murmur--affect-her.html</string>
+			<string>http://www.webmd.com/parenting/baby/crying-colic-9/temperature-fever</string>
+			<string>http://www.babycenter.com/0_baby-acne_72.bc</string>
+			<string>http://pregnant.thebump.com/new-mom-new-dad/baby-symptoms-conditions/articles/runny-stuffy-nose-baby.aspx</string>
+			<string>http://www.babycenter.com/0_birthmarks_75.bc</string>
+			<string>http://www.babycenter.com/0_chicken-pox_11991.bc</string>
+			<string>http://www.babycenter.com/0_fifth-disease_1439513.bc</string>
+			<string>http://www.babycenter.com/0_frostbite_11250.bc</string>
+			<string>http://www.babycenter.com/0_hives_10886.bc</string>
+			<string>http://www.babycenter.com/0_jaundice_89.bc</string>
+			<string>http://www.babycenter.com/0_measles_1417820.bc</string>
+			<string>http://www.babycenter.com/0_moles_1435115.bc</string>
+			<string>http://www.babycenter.com/0_pinworms_10897.bc</string>
+			<string>http://www.babycenter.com/0_poison-ivy-oak-and-sumac_11267.bc</string>
+			<string>http://www.babycenter.com/0_yeast-diaper-rash_10913.bc</string>
+			<string>http://www.babycenter.com/0_warts_1443878.bc</string>
+			<string>http://www.babycenter.com/0_swimmers-itch_1441106.bc</string>
+			<string>http://kidshealth.org/parent/infections/lung/croup.html</string>
+			<string>http://kidshealth.org/parent/infections/bacterial_viral/impetigo.html</string>
+			<string>http://kidshealth.org/parent/infections/bacterial_viral/reye.html</string>
+			<string>http://kidshealth.org/parent/infections/bacterial_viral/rsv.html</string>
+			<string>http://www.webmd.com/parenting/guide/tackling-toddler-sleep-problems</string>
 		</array>
 	</dict>
 	<key>Details</key>
