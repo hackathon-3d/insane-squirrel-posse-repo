@@ -27,7 +27,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="J7m-zc-Pcx" kind="modal" modalTransitionStyle="flipHorizontal" id="dGe-Bk-buF"/>
+                                    <segue destination="J7m-zc-Pcx" kind="modal" modalTransitionStyle="crossDissolve" id="dGe-Bk-buF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXR-fn-jMy">
@@ -79,16 +79,16 @@
             </objects>
             <point key="canvasLocation" x="653" y="-574"/>
         </scene>
-        <!--Table View Controller - Bundles Of Joy-->
+        <!--Child List View Controller - Bundles Of Joy-->
         <scene sceneID="GGi-fV-Q6h">
             <objects>
-                <tableViewController id="DgX-7E-Ak1" sceneMemberID="viewController">
+                <tableViewController id="DgX-7E-Ak1" customClass="KUMChildListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ML2-uh-ZiH">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bundleOfJoyCell" textLabel="Adm-g1-i5P" detailTextLabel="lv7-Hg-noh" style="IBUITableViewCellStyleValue1" id="OL9-YU-OtZ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="childListCell" textLabel="Adm-g1-i5P" detailTextLabel="lv7-Hg-noh" style="IBUITableViewCellStyleValue1" id="OL9-YU-OtZ">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -115,6 +115,11 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Bundles Of Joy" id="oIX-Cl-tzj">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="gMG-Aw-lvq">
+                            <connections>
+                                <segue destination="4" kind="modal" modalTransitionStyle="crossDissolve" id="p8C-rV-yV3"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZSQ-vO-fdE">
                             <connections>
                                 <segue destination="dKa-sT-VuH" kind="push" id="Qci-Ce-sWS"/>
@@ -1221,7 +1226,13 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Q &amp; A" id="u3c-pX-bdj"/>
+                    <navigationItem key="navigationItem" title="Q &amp; A" id="u3c-pX-bdj">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="rJ1-qH-vo2">
+                            <connections>
+                                <segue destination="4" kind="modal" modalTransitionStyle="crossDissolve" id="MB8-6E-suI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ik-LC-xNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1295,13 +1306,16 @@ Sending child data from this device to another device will REPLACE all child dat
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CR-zd-HOP">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Send Child Data To Another Device">
+                                <state key="normal" title="Cancel">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4" kind="modal" modalTransitionStyle="flipHorizontal" id="0og-0B-CUj"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Make sure the same App is running on the other device before clicking the button below." translatesAutoresizingMaskIntoConstraints="NO" id="ddu-Sa-os4">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1317,22 +1331,35 @@ Sending child data from this device to another device will REPLACE all child dat
                                     <constraint firstAttribute="height" constant="101" id="uZ3-Gg-dgo"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUH-fZ-n1h">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send Child Data To Another Device">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DUH-fZ-n1h" firstAttribute="leading" secondItem="pTr-Ae-432" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7uM-if-hQ7"/>
                             <constraint firstItem="3CR-zd-HOP" firstAttribute="leading" secondItem="pTr-Ae-432" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KhD-6K-9cw"/>
+                            <constraint firstItem="3CR-zd-HOP" firstAttribute="top" secondItem="DUH-fZ-n1h" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Lrf-B3-boP"/>
                             <constraint firstItem="ddu-Sa-os4" firstAttribute="leading" secondItem="pTr-Ae-432" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="S82-rP-P8U"/>
+                            <constraint firstItem="ddu-Sa-os4" firstAttribute="top" secondItem="edR-P4-hZP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="W98-w9-aa4"/>
                             <constraint firstItem="qiV-p8-7HB" firstAttribute="leading" secondItem="pTr-Ae-432" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="WsY-jJ-6Uy"/>
+                            <constraint firstAttribute="trailing" secondItem="DUH-fZ-n1h" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Xpp-Py-tt7"/>
                             <constraint firstAttribute="trailing" secondItem="ddu-Sa-os4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bSA-Yc-5Ow"/>
                             <constraint firstAttribute="trailing" secondItem="3CR-zd-HOP" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gZc-gs-aUL"/>
-                            <constraint firstItem="N7T-Iv-6Xi" firstAttribute="top" secondItem="pTr-Ae-432" secondAttribute="top" constant="81" id="giF-RY-BK6"/>
                             <constraint firstItem="qiV-p8-7HB" firstAttribute="top" secondItem="pTr-Ae-432" secondAttribute="top" constant="20" symbolic="YES" type="default" id="j14-HV-SKh"/>
+                            <constraint firstItem="edR-P4-hZP" firstAttribute="top" secondItem="pTr-Ae-432" secondAttribute="top" constant="223" id="lUu-mG-GhQ"/>
                             <constraint firstItem="N7T-Iv-6Xi" firstAttribute="leading" secondItem="pTr-Ae-432" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mwQ-io-cbG"/>
                             <constraint firstAttribute="trailing" secondItem="N7T-Iv-6Xi" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="nDe-d1-Nks"/>
-                            <constraint firstItem="edR-P4-hZP" firstAttribute="top" secondItem="pTr-Ae-432" secondAttribute="top" constant="251" id="qFw-Dc-Vhu"/>
+                            <constraint firstItem="N7T-Iv-6Xi" firstAttribute="top" secondItem="pTr-Ae-432" secondAttribute="top" constant="68" id="ptr-BP-hlb"/>
                             <constraint firstItem="edR-P4-hZP" firstAttribute="centerX" secondItem="ddu-Sa-os4" secondAttribute="centerX" type="default" id="s9O-ev-bKL"/>
                             <constraint firstAttribute="bottom" secondItem="3CR-zd-HOP" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="slw-dC-IFm"/>
-                            <constraint firstAttribute="bottom" secondItem="ddu-Sa-os4" secondAttribute="bottom" constant="101" id="tcv-Bu-Jal"/>
                             <constraint firstAttribute="trailing" secondItem="qiV-p8-7HB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zTG-Cj-5pU"/>
                         </constraints>
                     </view>
@@ -1358,16 +1385,16 @@ Sending child data from this device to another device will REPLACE all child dat
             </objects>
             <point key="canvasLocation" x="1273" y="-574"/>
         </scene>
-        <!--Table View Controller - Dependants-->
+        <!--Child List View Controller - Dependants-->
         <scene sceneID="CML-Hd-hEd">
             <objects>
-                <tableViewController id="DI0-Eu-7Se" sceneMemberID="viewController">
+                <tableViewController id="DI0-Eu-7Se" customClass="KUMChildListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="NgR-cN-7EN">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dependantListCell" textLabel="fBu-cC-IUF" detailTextLabel="PUK-zJ-FlS" style="IBUITableViewCellStyleValue1" id="wpo-QT-MvO">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="childListCell" textLabel="fBu-cC-IUF" detailTextLabel="PUK-zJ-FlS" style="IBUITableViewCellStyleValue1" id="wpo-QT-MvO">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1394,6 +1421,11 @@ Sending child data from this device to another device will REPLACE all child dat
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Dependants" id="STi-Zt-AF8">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="z0E-dG-fL7">
+                            <connections>
+                                <segue destination="4" kind="modal" modalTransitionStyle="flipHorizontal" id="67e-6m-Of9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BPb-pD-tiB">
                             <connections>
                                 <segue destination="RVC-eQ-i0a" kind="push" id="VGf-Ql-B8l"/>
@@ -2497,7 +2529,13 @@ Sending child data from this device to another device will REPLACE all child dat
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Advice" id="CG6-5B-118"/>
+                    <navigationItem key="navigationItem" title="Advice" id="CG6-5B-118">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="faW-ud-FUo">
+                            <connections>
+                                <segue destination="4" kind="modal" modalTransitionStyle="flipHorizontal" id="B5E-tp-zU5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyA-Xs-7VP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2563,7 +2601,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="e70-VS-PQG" kind="modal" modalTransitionStyle="partialCurl" id="tv0-Zo-SKe"/>
+                                    <segue destination="e70-VS-PQG" kind="modal" modalTransitionStyle="flipHorizontal" id="tv0-Zo-SKe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHt-Ow-K8D">
@@ -2576,7 +2614,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YmM-p9-mo1" kind="modal" modalTransitionStyle="partialCurl" id="scy-Uq-u9U"/>
+                                    <segue destination="YmM-p9-mo1" kind="modal" modalTransitionStyle="flipHorizontal" id="scy-Uq-u9U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS3-Ar-pnD">
@@ -2648,6 +2686,9 @@ Sending child data from this device to another device will REPLACE all child dat
         <image name="dad.png" width="1024" height="1044"/>
     </resources>
     <classes>
+        <class className="KUMChildListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMChildListViewController.h"/>
+        </class>
         <class className="KUMDaddyViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KUMDaddyViewController.h"/>
         </class>
@@ -2664,6 +2705,7 @@ Sending child data from this device to another device will REPLACE all child dat
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="0og-0B-CUj"/>
         <segue reference="dGe-Bk-buF"/>
     </inferredMetricsTieBreakers>
 </document>
