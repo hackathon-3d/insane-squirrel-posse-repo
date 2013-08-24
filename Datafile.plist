@@ -31,6 +31,44 @@
 			<string>Fear of Strangers</string>
 			<string>Food Messiness</string>
 			<string>Food Strikes</string>
+			<string>Food Throwing</string>
+			<string>Grabbing</string>
+			<string>Hair Pulling</string>
+			<string>Hair Twirling</string>
+			<string>Head Banging</string>
+			<string>Hitting &amp; Kicking</string>
+			<string>Impatience</string>
+			<string>Interrupting</string>
+			<string>Lying</string>
+			<string>Nail Biting</string>
+			<string>Negativity</string>
+			<string>Night Waking</string>
+			<string>Nose Picking</string>
+			<string>Object Throwing</string>
+			<string>Overeating</string>
+			<string>The In-Your-Face Tot</string>
+			<string>Picky Eating</string>
+			<string>When Toddlers Prefer One Parent</string>
+			<string>Potty Training Problem</string>
+			<string>Regression</string>
+			<string>Resisting Affection</string>
+			<string>Resisting Bath Time</string>
+			<string>Resisting Bedtime &amp; Napping</string>
+			<string>Resisting Dressing &amp; Diapering</string>
+			<string>Resisting Toileting</string>
+			<string>Resisting Toothbrushing</string>
+			<string>Screaming &amp; Screeching</string>
+			<string>Separation Anxiety</string>
+			<string>Sharing &amp; Taking Turns</string>
+			<string>Shyness</string>
+			<string>Sibling Rivalry</string>
+			<string>Stuttering</string>
+			<string>Swear Words &amp; Bad Language</string>
+			<string>Tantrums</string>
+			<string>Thumb Sucking</string>
+			<string>Wandering Off</string>
+			<string>Undressing</string>
+			<string>Whining</string>
 		</array>
 		<key>AdviceURL</key>
 		<array>
@@ -55,6 +93,44 @@
 			<string>http://www.whattoexpect.com/toddler/behavior/fear-of-strangers.aspx</string>
 			<string>http://www.whattoexpect.com/toddler/behavior/food-messiness.aspx</string>
 			<string>http://www.whattoexpect.com/toddler/behavior/food-strikes.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/food-throwing.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/grabbing.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/hair-pulling.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/hair-twirling.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/head-banging.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/hitting-and-kicking.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/impatience.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/interrupting.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/lying.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/nail-biting.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/negativity.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/night-waking.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/nose-picking.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/object-throwing.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/overeating.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/in-your-face-tot.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/picky-eating.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/when-toddlers-prefer-one-parent.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/potty-training-problem-refusing-to-poop.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/acting-like-baby.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/resisting-affection.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/resisting-bath-time.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/resisting-bedtime.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/resisting-dressing.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/resisting-toileting.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/resisting-toothbrushing.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/screaming-and-screeching.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/separation-anxiety.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/sharing-and-taking-turns.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/shyness.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/sibling-rivalry.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/stuttering.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/swear-words.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/tantrums.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/thumb-sucking.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/wandering-off.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/undressing.aspx</string>
+			<string>http://www.whattoexpect.com/toddler/behavior/whining.aspx</string>
 		</array>
 	</dict>
 	<key>Details</key>
