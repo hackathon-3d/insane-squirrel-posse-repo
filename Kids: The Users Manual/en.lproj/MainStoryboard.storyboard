@@ -109,7 +109,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="5BL-Qc-doS" kind="push" id="Uxt-sr-S4d"/>
+                                    <segue destination="5BL-Qc-doS" kind="push" identifier="ChildList_ChildDetail" id="Uxt-sr-S4d"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -223,7 +223,9 @@
                             <outlet property="delegate" destination="dKa-sT-VuH" id="dTh-CD-0AK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Bundle Of Joy" id="Dbb-Ic-9S4"/>
+                    <navigationItem key="navigationItem" title="New Bundle Of Joy" id="Dbb-Ic-9S4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Axt-6o-ChP"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvN-d0-zCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1205,7 +1207,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="m38-Ht-gH6" style="IBUITableViewCellStyleDefault" id="1it-sc-HQb">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="adviceCell" textLabel="m38-Ht-gH6" style="IBUITableViewCellStyleDefault" id="1it-sc-HQb">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1415,7 +1417,7 @@ Sending child data from this device to another device will REPLACE all child dat
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="i4e-Wv-EEr" kind="push" id="0Zf-s7-i13"/>
+                                    <segue destination="i4e-Wv-EEr" kind="push" identifier="ChildList_ChildDetail" id="0Zf-s7-i13"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1520,7 +1522,9 @@ Sending child data from this device to another device will REPLACE all child dat
                             <outlet property="delegate" destination="RVC-eQ-i0a" id="DP8-G9-Zeq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Dependant" id="PMH-08-0YP"/>
+                    <navigationItem key="navigationItem" title="New Dependant" id="PMH-08-0YP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="KLQ-Nc-1jf"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOg-pJ-Tol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2508,7 +2512,7 @@ Sending child data from this device to another device will REPLACE all child dat
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="0Yu-vZ-pok" style="IBUITableViewCellStyleDefault" id="2Nm-fM-w1Z">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="adviceCell" textLabel="0Yu-vZ-pok" style="IBUITableViewCellStyleDefault" id="2Nm-fM-w1Z">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -2705,7 +2709,7 @@ Sending child data from this device to another device will REPLACE all child dat
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0og-0B-CUj"/>
+        <segue reference="B5E-tp-zU5"/>
         <segue reference="dGe-Bk-buF"/>
     </inferredMetricsTieBreakers>
 </document>
